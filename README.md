@@ -2,7 +2,7 @@
 
 ## An EV battery charge estimator tool.
 
-Estimates the optimal charge for a given trip/commute that attempts to leave the battery as close to equilibrium as possible.
+Estimates the optimal charge for a given trip or daily commute that attempts to leave the battery as close to equilibrium as possible.
 
 ## Available Scripts
 
