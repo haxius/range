@@ -1,7 +1,8 @@
 import React, { FC } from "react";
+import Battery from "../../components/Battery";
 import { Route } from "../../context/Router/models";
 
-const Main: FC = () => <>Hello world!</>;
+const Main: FC = () => <Battery />;
 
 export default {
   name: "",

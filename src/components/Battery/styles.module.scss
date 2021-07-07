@@ -1,0 +1,20 @@
+.track {
+  height: 42px;
+  width: 100%;
+  background: blue;
+  position: relative;
+}
+
+.thumb {
+  height: 42px;
+  width: 4px;
+  background: white;
+}
+
+.completion {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: red;
+}
