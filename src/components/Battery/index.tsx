@@ -27,21 +27,21 @@ const Battery: FC<IBatteryProps> = () => {
             {children}
             <div className={styles.completion} style={{ width: `${value}%` }} />
             <div
-              className={cc([styles.guide, styles.guideGreen])}
+              className={cc([styles.guide, styles.guideImportant])}
               style={{ left: "50%" }}
             >
               <span>50%</span>
             </div>
             <div className={styles.guide} style={{ left: "60%" }} />
             <div
-              className={cc([styles.guide, styles.guideGreen])}
+              className={cc([styles.guide, styles.guideImportant])}
               style={{ left: "70%" }}
             >
               <span>70%</span>
             </div>
             <div className={styles.guide} style={{ left: "80%" }} />
             <div
-              className={cc([styles.guide, styles.guideGreen])}
+              className={cc([styles.guide, styles.guideImportant])}
               style={{ left: "90%" }}
             >
               <span>DAILY</span>
