@@ -1,6 +1,6 @@
-import cc from "classcat";
 import React, { FC, useState } from "react";
 import { Range } from "react-range";
+import Guide from "./Guide";
 import styles from "./styles.module.scss";
 
 interface IBatteryProps {}
@@ -26,26 +26,11 @@ const Battery: FC<IBatteryProps> = () => {
           <div {...props} className={styles.track} style={props.style}>
             {children}
             <div className={styles.completion} style={{ width: `${value}%` }} />
-            <div
-              className={cc([styles.guide, styles.guideImportant])}
-              style={{ left: "50%" }}
-            >
-              <span>50%</span>
-            </div>
-            <div className={styles.guide} style={{ left: "60%" }} />
-            <div
-              className={cc([styles.guide, styles.guideImportant])}
-              style={{ left: "70%" }}
-            >
-              <span>70%</span>
-            </div>
-            <div className={styles.guide} style={{ left: "80%" }} />
-            <div
-              className={cc([styles.guide, styles.guideImportant])}
-              style={{ left: "90%" }}
-            >
-              <span>DAILY</span>
-            </div>
+            <Guide location={50} caption />
+            <Guide location={60} />
+            <Guide location={70} caption />
+            <Guide location={80} />
+            <Guide location={90} caption />
           </div>
         )}
         renderThumb={({ props }) => (
