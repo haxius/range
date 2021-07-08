@@ -35,8 +35,36 @@
 
 .thumb {
   height: 100%;
-  width: 4px;
+  width: 0px;
   background: white;
+  outline: 0;
+
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}
+
+.guide {
+  height: 100%;
+  border-left: 2px solid gray;
+  position: absolute;
+  top: 0;
+
+  &Important {
+    border-left: 2px solid white;
+
+    span {
+      color: white;
+    }
+  }
+
+  span {
+    height: 100%;
+    text-align: center;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+  }
 }
 
 .completion {
